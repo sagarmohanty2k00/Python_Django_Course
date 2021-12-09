@@ -1,0 +1,46 @@
+Day 0 : Done
+      -> Installation
+      -> IDLE
+      -> print
+
+Day 1 :
+      -> Datatypes
+      -> Variables
+      -> Strings
+      -> List
+      -> Tuples
+      -> Dictionaries
+      
+Day 2 :
+      -> Conditionals
+      -> Loops
+
+Day 3 :
+      -> Functions
+
+Day 4 :
+      -> Recursion
+
+Day 5 :
+      -> OOPs
+      
+Day 6 :
+      -> Exception handling
+      -> File handling
+
+Day 7 - 10 :
+      -> External Libraries
+
+Django -> 12 - 15 days -> 6 Projects
+1. TODO - CRUD
+2. Expense tracker - complex CRUD
+3. Contact Manager - User
+4. Small Blog - USER + Complex Backend
+5. E-Com - Payment Integration (Optional)
+6. CHAT APP - channels + redis
+
+DRF -> 7 - 10 days -> 3 Projects
+1. Basic API for Only GET request serialization
+2. CRUD with API - Tocken Auth
+
+3. Assignment - Modify Chat App
