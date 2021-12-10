@@ -6,12 +6,14 @@ Day 0 : Done
 Day 1 :
       -> Datatypes
       -> Variables
+      -> User input (Optional)
       -> Strings
       -> List
       -> Tuples
       -> Dictionaries
       
 Day 2 :
+      -> Arrays
       -> Conditionals
       -> Loops
 
