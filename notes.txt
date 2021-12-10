@@ -13,7 +13,6 @@ Day 1 :
       -> Dictionaries
       
 Day 2 :
-      -> Arrays
       -> Conditionals
       -> Loops
 
