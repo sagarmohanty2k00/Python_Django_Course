@@ -1,0 +1,2 @@
+# Input Color
+color = input()

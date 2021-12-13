@@ -3,16 +3,16 @@ Day 0 : Done
       -> IDLE
       -> print
 
-Day 1 :
+Day 1 : Done
       -> Datatypes
       -> Variables
-      -> User input (Optional)
+      -> User input
       -> Strings
       -> List
       -> Tuples
       -> Dictionaries
       
-Day 2 :
+Day 2 : 
       -> Conditionals
       -> Loops
 

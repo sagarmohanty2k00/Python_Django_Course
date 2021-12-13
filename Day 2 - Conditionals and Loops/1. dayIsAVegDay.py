@@ -1,0 +1,1 @@
+# Input is a day of the week

@@ -1,0 +1,1 @@
+# Take input as a character and determine whether it is a vowel or not
