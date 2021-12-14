@@ -5,6 +5,7 @@ chances = 20
 
 while chances > 0:
     guess = int(input("GUESS A NUMBER : "))
+    
     if (guess == number):
         print("YOU WON THE GAME")
         break

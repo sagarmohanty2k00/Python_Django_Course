@@ -12,7 +12,7 @@ Day 1 : Done
       -> Tuples
       -> Dictionaries
       
-Day 2 : 
+Day 2 : Left Pattern
       -> Conditionals
       -> Loops
 
