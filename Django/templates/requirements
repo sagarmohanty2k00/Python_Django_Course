@@ -1,0 +1,38 @@
+Login - Register
+
+Add funds - Withdraw funds
+
+80 - 20 rule
+when fund is added - 80% goes to spendings + 20% goes to savings
+
+when fund is withdrawn - reduced from spending
+
+transfer - transfers money from savings to spending or spending to savings
+
+
+DB Schema :-
+User - built-in
+transactions - user, amount, reason, date, time
+Funds - user, spendables, savings
+
+Urls :-
+/login/
+/logout/
+/register/
+/
+/transactions/
+/add/
+/withdraw/
+/tranasfer/
+/404/
+/invalid-request/
+
+views :-
+login - POST GET
+logout
+register - POST GET
+home
+transactions
+add - POST
+withdraw - POST
+tranasfer

@@ -1,0 +1,43 @@
+{% extends "funds/index.html" %}
+{% block main %}
+    <select name="" class="" id="">
+        <option value="All transactions">All transactions</option>
+        <option value="Deposits">Deposits</option>
+        <option value="widthdraw">widthdraw</option>
+    </select>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#Transaction id</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Reason</th>
+                <th scope="col">Date</th>
+                <th scope="col">Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for transaction in transactions %}
+            {% if transaction.amount < 0 %}
+            <tr class="text-danger">
+                <th scope="row">{{transaction.id}}</th>
+                <td>{{transaction.amount}}</td>
+                <td>{{transaction.reason}}</td>
+                <td>{{transaction.date}}</td>
+                <td>{{transaction.time}}</td>
+            </tr>
+            {% endif %}
+            
+            {% if transaction.amount > 0 %}
+            <tr class="text-success">
+                <th scope="row">{{transaction.id}}</th>
+                <td>{{transaction.amount}}</td>
+                <td></td>
+                <td>{{transaction.date}}</td>
+                <td>{{transaction.time}}</td>
+            </tr>
+            {% endif %}
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

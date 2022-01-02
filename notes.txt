@@ -34,11 +34,11 @@ Day 7 - 10 : Done
 
 Django -> 12 - 15 days -> 6 Projects
 1. TODO - CRUD
-2. Expense tracker - complex CRUD
-3. Contact Manager - User
-4. Small Blog - USER + Complex Backend
-5. E-Com - Payment Integration (Optional)
-6. CHAT APP - channels + redis
+2. Expense tracker - complex CRUD + User
+3. Small Blog - USER + Complex Backend
+4. E-Com - Payment Integration (Optional)
+5. CHAT APP - channels + redis
+6. Instaram Clone - complete
 
 DRF -> 7 - 10 days -> 3 Projects
 1. Basic API for Only GET request serialization
