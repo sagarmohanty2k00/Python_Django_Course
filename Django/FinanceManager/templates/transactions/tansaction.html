@@ -9,7 +9,7 @@
     <table class="table">
         <thead>
             <tr>
-                <th scope="col">#Transaction id</th>
+                <th scope="col">Transaction id</th>
                 <th scope="col">Amount</th>
                 <th scope="col">Reason</th>
                 <th scope="col">Date</th>
@@ -20,7 +20,7 @@
             {% for transaction in transactions %}
             {% if transaction.amount < 0 %}
             <tr class="text-danger">
-                <th scope="row">{{transaction.id}}</th>
+                <th scope="row"># {{transaction.id}}</th>
                 <td>{{transaction.amount}}</td>
                 <td>{{transaction.reason}}</td>
                 <td>{{transaction.date}}</td>
@@ -30,9 +30,9 @@
             
             {% if transaction.amount > 0 %}
             <tr class="text-success">
-                <th scope="row">{{transaction.id}}</th>
+                <th scope="row"># {{transaction.id}}</th>
                 <td>{{transaction.amount}}</td>
-                <td></td>
+                <td>{{transaction.reason}}</td>
                 <td>{{transaction.date}}</td>
                 <td>{{transaction.time}}</td>
             </tr>

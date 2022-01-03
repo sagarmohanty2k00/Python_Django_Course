@@ -1,0 +1,24 @@
+Modules :- 
+=====================
+1. User - emailID and Password
+2. BlogPost - title, contents, date, time
+3. Likes
+4. Comments
+5. Tags
+
+Pages :-
+======================
+1. Home
+2. Post
+3. User Deatails
+4. Login / Register
+5. Create new post
+6. dashboard (optional)
+7. search result
+
+
+Apps :-
+=======================
+1. accounts - login, register, changepassword,
+2. posts - create, view, comment, edit, like,
+3. main - home, search,

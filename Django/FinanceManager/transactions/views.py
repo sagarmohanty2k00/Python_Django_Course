@@ -31,8 +31,21 @@ def add(request, val):
 
     return HttpResponseRedirect('/')
 
-def withdraw(request):
-    pass
+def withdraw(request, val, reason):
+    amount = float(val)
+    date = datetime.date.today()
+    time = datetime.datetime.now().strftime("%H:%M:%S")
+
+    transaction = Transaction.objects.create(user=request.user, amount=-amount, reason=reason, date=date, time=time)
+    try:
+        fund = Fund.objects.get(user = request.user)
+    except:
+        fund = Fund.objects.create(request.user, 0, 0)
+
+    fund.spendables = (fund.spendables - amount)
+    fund.save()
+
+    return HttpResponseRedirect('/')
 
 def transfer(request):
     pass

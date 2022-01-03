@@ -93,12 +93,12 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <input type="number" class="form-control" placeholder="Amount here">
-                        <input type="text" name="reason" class="form-control mt-3" placeholder="Enter your reason">
+                        <input type="number" class="form-control" placeholder="Amount here" id="withdrawAmount">
+                        <input type="text" name="reason" class="form-control mt-3" placeholder="Enter your reason" id="withdrawReason">
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <a type="button" class="btn btn-primary" href="/withdraw/">Withdraw</a>
+                        <button type="button" class="btn btn-primary" onclick="callWithdraw()">Withdraw</button>
                     </div>
                 </div>
             </div>
@@ -142,7 +142,11 @@
             window.location.href = `/transactions/add/${val}`;
         }
 
-        function callWithdraw() {}
+        function callWithdraw() {
+            const val = document.getElementById('withdrawAmount').value;
+            const reason = document.getElementById('withdrawReason').value;
+            window.location.href = `/transactions/withdraw/${val}/${reason}/`;
+        }
 
         function callTransfer() {}
     </script>
