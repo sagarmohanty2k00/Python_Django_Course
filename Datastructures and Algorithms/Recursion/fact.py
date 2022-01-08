@@ -1,0 +1,1 @@
+# fact(n) = fact(n-1) * n
