@@ -21,7 +21,5 @@ def search(req, query):
         if query in post.heading:
             all_post.append(post)
 
-    
-
 def topic(req, query):
     pass

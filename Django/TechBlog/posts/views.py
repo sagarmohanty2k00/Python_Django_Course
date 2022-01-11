@@ -2,6 +2,7 @@ from django.http.response import HttpResponseRedirect
 from django.shortcuts import render
 from .models import Post
 import datetime
+from django.http import JsonResponse
 
 # Create your views here.
 def ask(req):
@@ -20,3 +21,25 @@ def ask(req):
     post = Post.objects.create(user=req.user, postId=postid, heading=header, date=date, time=time,content=content)
 
     return HttpResponseRedirect('/')
+
+def details(req, id):
+    try:
+        post = Post.objects.get(id=id)
+        user = post.user
+        response = {
+            "id" : post.postId,
+            "heading" : post.heading,
+            "content" : post.content,
+            "user" : {
+                "first name" : user.first_name,
+                "last name" : user.last_name,
+                "email id" : user.email,
+            }
+        }
+
+        return JsonResponse(response)
+        
+    except:
+        return JsonResponse({
+            "message" : "No post found with the provided id"
+        })
